@@ -9,9 +9,6 @@
     "build": "next build",
     "start": "next start"
   },
-  "engines": {
-    "node": "14.17.0"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
