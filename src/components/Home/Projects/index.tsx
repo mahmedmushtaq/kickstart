@@ -34,7 +34,7 @@ export default () => {
         <div className="absolute w-full h-full  flex justify-center items-center">
           <div className="md:text-6xl text-white font-gilroyBold text-center xs:text-5xl">
             <h2>
-              Explore Top <br /> VR Projects
+              Explore The Top <br /> VR Projects
             </h2>
             <Button className="mt-10" variant="contained">
               Lets Explore
