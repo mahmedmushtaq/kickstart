@@ -14,7 +14,7 @@ export default () => {
         </div>
       ))}
       <div className="mt-10">
-        <TopBarButton heading={content.joinUs} />
+        <TopBarButton>{content.joinUs}</TopBarButton>
       </div>
     </div>
   );

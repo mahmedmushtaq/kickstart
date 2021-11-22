@@ -3,7 +3,7 @@ import useWidthMediaQuery from "../../../hooks/useWidthMediaQuery";
 import Button from "../../UIComponents/Button";
 
 export default () => {
-  const { md, xl, xs } = useWidthMediaQuery();
+  const { xl } = useWidthMediaQuery();
   const [backgroundImage, setBackgroundImage] = useState(undefined);
 
   useEffect(() => {
@@ -16,17 +16,17 @@ export default () => {
 
   return (
     <div
-      className="grid xs:grid-cols-1 xl:grid-cols-2 gap-2"
+      className="grid xs:grid-cols-1 xl:grid-cols-2 gap-2 block relative"
       style={{
         background: backgroundImage,
         width: "100%",
-        height: "70vh",
+        height: backgroundImage ? "70vh" : undefined,
         backgroundSize: backgroundImage ? "cover" : undefined,
       }}
     >
       {!backgroundImage && (
-        <div>
-          <img src="bg2.jpg" className="w-screen mx-auto" />
+        <div className="block relative h-full w-full">
+          <img src="bg2.jpg" className="w-screen mx-auto w-full h-full block" />
         </div>
       )}
 
@@ -47,13 +47,11 @@ export default () => {
             during your proceedure
           </p>
           <div className="mt-10 flex gap-3 justify-center xs:flex-col md:flex-row xs:w-4/5 xs:mx-auto xl:w-full">
-            <Button heading="Submit My Project" variant="contained" />
+            <Button variant="contained">Funds For Projects</Button>
 
-            <Button
-              variant="contained"
-              color="primary"
-              heading="Invest On Projects"
-            />
+            <Button variant="contained" color="primary">
+              Invest On Projects
+            </Button>
           </div>
         </div>
       </div>

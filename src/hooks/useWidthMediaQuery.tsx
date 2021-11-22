@@ -20,7 +20,10 @@ const useWidthMediaQuery = () => {
     query: "(min-width: 1536px)",
   });
 
-  return { xs, sm, md, lg, xl, xxl };
+  const xxxl = useMediaQuery({
+    query: "(min-width: 2500px)",
+  });
+  return { xs, sm, md, lg, xl, xxl, xxxl };
 };
 
 export default useWidthMediaQuery;

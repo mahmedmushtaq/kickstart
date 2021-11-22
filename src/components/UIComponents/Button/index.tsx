@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import PropTypes from "./ProptType";
 
 export default (props: PropTypes) => {
-  const { heading, className, color, variant } = props;
+  const { children, className, color, variant } = props;
   const [buttonColor, setButtonColor] =
     useState<PropTypes["color"]>("secondary");
   const [btnVariant, setBtnVariant] =
@@ -29,7 +29,7 @@ export default (props: PropTypes) => {
           : ""
       }`}
     >
-      {heading}
+      {children}
     </button>
   );
 };

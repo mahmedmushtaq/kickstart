@@ -1,5 +1,7 @@
+import React from "react";
+
 interface PropTypes {
-  heading: string;
+  children: React.ReactChild;
   className?: string;
   color?: "primary" | "secondary";
   variant?: "contained" | "outlined";

@@ -31,20 +31,17 @@ export default () => {
                 {item.heading}
               </h2>
             ))}
-            <TopBarButton
-              className="lg:hidden"
-              heading={content.registration}
-            />
+            <TopBarButton className="lg:hidden">
+              {content.registration}
+            </TopBarButton>
           </div>
 
           {/* for large screens divide navbar into 3 sections icon+item+buttons */}
           <div className="lg:flex xs:hidden sm:hidden items-center">
-            <button
-              className="mr-5 text-md text-lg hover:text-secondary cursor-pointer font-gilroyBold"
-            >
+            <button className="mr-5 text-md text-lg hover:text-secondary cursor-pointer font-gilroyBold">
               {content.signIn}
             </button>
-            <TopBarButton heading={content.joinUs} />
+            <TopBarButton>{content.joinUs}</TopBarButton>
           </div>
 
           {/* for mobiles */}

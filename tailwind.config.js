@@ -18,7 +18,7 @@ module.exports = {
       black: "black",
     },
     screens: {
-      xs: "325px",
+      xs: "320px",
       xl3: "2500px",
       ...defaultTheme.screens,
     },
