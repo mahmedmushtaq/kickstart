@@ -5,7 +5,8 @@ import Campaign from "../../../../ethereum/campaign";
 import web3 from "../../../../ethereum/web3";
 
 export default (props) => {
-  console.log(JSON.parse(JSON.stringify(props.requests)));
+  console.log("list is ", props.requests);
+
   return (
     <div>
       <div>
